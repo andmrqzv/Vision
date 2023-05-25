@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TV Remote</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">body {
+		background-color: #455a64;
+		text-align: center;
+	}
+	
+	h1 {
+		color: white;
+	}
+	div.grid-container {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		grid-gap: 1vw;
+		max-width: 1100px;
+		align-items: center;
+		justify-items: center;
+		padding: 1vw;
+	}
+	div.numberPad{
+		max-width: 500px;
+		margin: 1% auto;
+		border-radius: 5px;
+		display: grid;
+		grid-template-columns: repeat(3, 80px);
+		grid-template-rows: repeat(7, 80px);
+		align-items: center;
+		justify-items: center;
+		padding: 2vw; /*make the padding the same*/
+	}
+	div.powerPad{
+		max-width: 240px;
+		margin: 1% auto;
+		border-radius: 5px;
+		display: grid;
+		grid-template-columns: repeat(2, 100px);
+		grid-template-rows: repeat(4, 100px);
+		align-items: center;
+		justify-items: center;
+		padding: 1vw; /*make the padding the same*/
+	}
+	button.circle-button {
+		width: 80px;
+		height: 80px;
+		background-color: #ddd;
+		border-radius: 50%;
+		border: none;
+		box-shadow: 2px 2px 2px #aaa;
+		cursor: pointer;
+		display: inline;
+		font-size: 20px;
+	}
+	button.square-button {
+		width: 70px;
+		height: 70px;
+		background-color: #ddd;
+		border: none;
+		box-shadow: 2px 2px 2px #aaa;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 25px;
+	}
+	button.rectangle-button {
+		width: 60px;
+		height: 40px;
+		background-color: #ddd;
+		border: none;
+		box-shadow: 2px 2px 2px #aaa;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 20px;
+	}
+	</style>
+</head>
+<body>
+	<h1>TV Remote</h1>
+	<div class = "grid-container">
+		<div class = "powerPad">
+			<button class = "circle-button" id="on"> power </button>
+			<button class = "rectangle-button" id="menu"> menu </button>
+			 
+			<button class = "square-button" id="vol-up">&#x1f50a </button> 
+			<button class = "square-button" id="ch-up">&#x2B9D </button>
+			
+			<button class = "square-button" id="vol-down">&#x1f508 </button>
+			<button class = "square-button" id="ch-down">&#x2B9F </button>
+		</div>
+		<div class = "numberPad">
+			<div></div>
+			<button class = "square-button" id="up">&#x2B9D</button>
+			<div></div>
+			
+			<button class = "square-button" id="left"> &#x2B9C </button>
+			<button class = "square-button" id="enter">enter</button>
+			<button class = "square-button" id="right"> &#x27A4 </button>
+			
+			<button class = "rectangle-button" id="input"> input </button>
+			<button class = "square-button" id="down"> &#x2B9F </button>
+			<button class = "rectangle-button" id="mute"> mute </button>
+			
+			
+			<button class = "square-button" id="one">1</button>
+			<button class = "square-button" id="two">2</button>
+			<button class = "square-button" id="three">3</button>
+			
+			<button class = "square-button" id="four">4</button>
+			<button class = "square-button" id="five">5</button>
+			<button class = "square-button" id="six">6</button>
+			
+			<button class = "square-button" id="seven">7</button>
+			<button class = "square-button" id="eight">8</button>
+			<button class = "square-button" id="nine">9</button>
+			
+			<div></div>
+			<button class = "square-button" id="zero">0</button>
+			<div></div>
+		</div>
+	</div>
+	<script>
+		function power() {
+			location.href = "http://192.168.0.100/ir?code=551489775";
+		}
+		function VolumeUp() {
+			location.href = "http://192.168.0.100/ir?code=551502015";
+		}
+		function VolumeDown() {
+			location.href = "http://192.168.0.100/ir?code=551534655";
+		}
+		function ChannelUp() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=551485695";
+		}
+		function ChannelDown() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=551518335";
+		}
+		function Input() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=551538735";
+		}
+		function Mute() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=551522415";
+		}
+		function Num1() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=551520375";
+		}
+		function Num2() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=2170978686";
+		}
+		function Num3() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=2170978686";
+		}
+		function Num4() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=2170978686";
+		}
+		function Num5() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=2170978686";
+		}
+		function Num6() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=2170978686";
+		}
+		function Num7() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=2170978686";
+		}
+		function Num8() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=2170978686";
+		}
+		function Num9() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=2170978686";
+		}
+		function Num0() {
+			// add your code here
+			location.href = "http://192.168.0.100/ir?code=2170978686";
+		}
+		
+
+		document.getElementById("on").addEventListener("click", power);
+		document.getElementById("vol-up").addEventListener("click", VolumeUp);
+		document.getElementById("vol-down").addEventListener("click", VolumeDown);
+		document.getElementById("ch-up").addEventListener("click", ChannelUp);
+		document.getElementById("ch-down").addEventListener("click", ChannelDown);
+		document.getElementById("mute").addEventListener("click", Mute);
+		document.getElementById("input").addEventListener("click", Input);
+		document.getElementById("one").addEventListener("click", Num1);
+		document.getElementById("two").addEventListener("click", Num2);
+		document.getElementById("three").addEventListener("click", Num3);
+		document.getElementById("four").addEventListener("click", Num4);
+		document.getElementById("five").addEventListener("click", Num5);
+		document.getElementById("six").addEventListener("click", Num6);
+		document.getElementById("seven").addEventListener("click", Num7);
+		document.getElementById("eight").addEventListener("click", Num8);
+		document.getElementById("nine").addEventListener("click", Num9);
+		document.getElementById("zero").addEventListener("click", Num0);
+		
+		
+	</script>
+</body>
+</html>
